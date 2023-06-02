@@ -61,7 +61,7 @@
 	text-align: center;
 }
 
-button {
+.btn button {
 	background: #46b746;
 	border: none;
 	padding: 13px 17px;
@@ -71,7 +71,7 @@ button {
     transition: .5s;
 }
 
-button:hover {
+.btn button:hover {
     background-color: green;
 }
 
@@ -86,4 +86,16 @@ button:hover {
 	background: #fff;
 	position: fixed;
 	top: 0;
+}
+
+.info-container {
+	margin-left: 25%;
+	margin-top: 20%;
+}
+
+textarea {
+	resize: none;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
 }

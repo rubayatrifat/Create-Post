@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Your Post</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="overflow">
     <div class="posts">
         <div class="post-container">
             <div class="single-post">
@@ -17,15 +24,21 @@
             </div>
         </div>
         <div class="btn">
-            <button>Create Post</button>    
+            <button id="post-info-form">Create Post</button>    
         </div>
     </div>
+    <!-- <input type="file" id="imageInput" accept="image/*" onchange="previewImage(event)" /> -->
+
 
     <div class="include-info">
-        <textarea placeholder="Your Post's text..."></textarea>
-        <input type="file">
+        <div class="info-container">
+            <textarea class="post-txt" placeholder="Your Post's text..."></textarea>
+            <input type="file">
+            <button class="publish-btn">Publish</button>
+        </div>    
     </div>
 
     <script src="main.js"></script>
+
 </body>
 </html>
